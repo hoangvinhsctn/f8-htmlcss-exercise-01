@@ -39,6 +39,21 @@ a {
     line-height: 68px;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.lv2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.lv3 {
+    --line-clamp: 3;
+}
+
 /* =========Header========== */
 
 .header.fixed {
@@ -100,7 +115,7 @@ a {
 
 /* =========Hero========= */
 .hero {
-    padding-top: 50px;
+    padding: 42px 0 79px;
 }
 
 .hero .body {
@@ -326,4 +341,65 @@ a {
     font-size: 1rem;
     font-weight: 500;
     background-color: var(--primary-color);
+}
+
+/* ========Feature======== */
+.feature {
+    margin-top: 65px;
+    padding: 65px 0;
+}
+
+.feature .body {
+    width: 88%;
+}
+/* Feature top */
+.feature-top .label {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.feature-top .heading {
+    margin: 18px 0;
+    width: 56.3%;
+    color: #0d1111;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+}
+
+.feature-top .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 57.6%;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+/* Feature bottom */
+.feature .list-activity {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.feature .list-activity .title {
+    margin-top: 26px;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.feature .list-activity .desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    width: 223px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.69; /* 168.75% */
+}
+
+.feature .list-activity .item:first-child .desc {
+    width: 168px;
 }
