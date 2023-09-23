@@ -720,3 +720,52 @@ a {
     font-weight: 400;
     line-height: 1.5;
 }
+
+/* ===========Footer============ */
+.footer {
+    padding: 130px 0 50px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .column:not(:last-child) {
+    margin-right: 144px;
+}
+
+.footer .column:nth-child(4) {
+    margin-right: 137px;
+}
+
+.footer .row .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer li {
+    margin-top: 18px;
+}
+
+.footer .column:last-child li {
+    display: flex;
+    gap: 9px;
+}
+
+.footer .list a {
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
