@@ -559,3 +559,135 @@ a {
     font-weight: 400;
     line-height: 1.5;
 }
+
+/* ============Feedback============= */
+.feedback {
+    margin-top: 264px;
+}
+
+.feedback-item {
+    display: flex;
+    height: 481px;
+}
+
+/* Left */
+.feedback-item .content {
+    display: flex;
+    align-items: center;
+    margin-right: 72px;
+}
+
+.feedback-item .inside {
+    width: 419px;
+    height: 407px;
+}
+
+.feedback-item .inside blockquote {
+    margin-top: 27px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+
+.feedback-item .inside .quote-owner {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.feedback-item .inside .quote-owner::before {
+    margin-right: 5px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+}
+
+.feedback-item .inside .quote-owner .bold {
+    color: #070707;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+.feedback-item .inside .quote-owner .normal {
+    color: #767e7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.feedback-item .inside .controls {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+}
+
+.feedback-item .inside .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+}
+
+.feedback-item .inside .control-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(30, 191, 193, 0.3);
+    color: #fff;
+    background: var(--primary-color);
+}
+
+/* Right */
+.feedback-item .info {
+    position: relative;
+    width: 58%;
+}
+
+.feedback-item .info .quote-item-img {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+
+.feedback-item .info .quote-item-img:first-child {
+    left: 0;
+    bottom: 145px;
+}
+
+.feedback-item .info .quote-item-img:nth-child(2) {
+    width: 92px;
+    height: 92px;
+    top: 0;
+    left: 144px;
+}
+
+.feedback-item .info .quote-item-img:nth-child(3) {
+    left: 273px;
+    top: 107px;
+    width: 235px;
+    height: 235px;
+}
+
+.feedback-item .info .quote-item-img:nth-child(4) {
+    bottom: 0;
+    left: 212px;
+}
+
+.feedback-item .info .quote-item-img:nth-child(5) {
+    right: 32px;
+    bottom: 29px;
+}
+
+.feedback-item .info .quote-item-img:last-child {
+    top: 19px;
+    right: 0;
+    width: 110px;
+    height: 110px;
+}
